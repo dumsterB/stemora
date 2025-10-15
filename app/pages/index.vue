@@ -1,0 +1,4 @@
+<template>
+  <MainHero />
+  <MainAdvantage />
+</template>
