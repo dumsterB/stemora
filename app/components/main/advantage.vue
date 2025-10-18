@@ -1,30 +1,5 @@
 <script setup lang="ts">
-import sofa from '~/assets/icons/sofa.png'
-import plastic from '~/assets/icons/plastic.png'
-import dry from '~/assets/icons/dry.png'
-import appointment from '~/assets/icons/appointment.png'
-const advantageList = [
-  {
-    img: sofa,
-    title: 'Deep sofa cleaning',
-    class: 'bg-[#FAF1F2] hover:ring ring-[#FF4E64]'
-  },
-  {
-    img: plastic,
-    title: 'Eco-Friendly Steam',
-    class: 'bg-[#FAF4F1] hover:ring ring-[#FF4E64] '
-  },
-  {
-    img: dry,
-    title: 'Fast dry Time',
-    class: 'bg-[#F8F6FB] hover:ring ring-[#FF4E64] '
-  },
-  {
-    img: appointment,
-    title: 'Easy scheduling',
-    class: 'bg-[#EDF1F5] hover:ring ring-[#FF4E64] '
-  }
-]
+import { ADVANTAGES } from '~/constants'
 </script>
 
 <template>
@@ -34,7 +9,7 @@ const advantageList = [
     </h2>
     <div class="grid grid-cols-2 gap-3 lg:gap-5">
       <div
-        v-for="adv in advantageList"
+        v-for="adv in ADVANTAGES"
         :key="adv.title"
         :class="adv.class"
         class="flex flex-col items-center rounded-[20px] p-8 transition-all"

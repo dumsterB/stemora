@@ -1,10 +1,5 @@
 <script setup lang="ts">
-const links = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Our Process', href: '/process' },
-  { name: 'Contact', href: '/contact' }
-]
+import { FOOTER_LINKS, CONTACT_INFO } from '~/constants'
 </script>
 <template>
   <footer class="container bg-white">
@@ -12,7 +7,7 @@ const links = [
       <BaseSkeleton class="h-13 w-50" />
 
       <ul class="flex h-full flex-row gap-5 lg:flex-col">
-        <li v-for="link in links" :key="link.name">
+        <li v-for="link in FOOTER_LINKS" :key="link.name">
           <NuxtLink :to="link.href" active-class="!font-bold" class="text-[16px] font-medium lg:text-lg">
             {{ link.name }}
           </NuxtLink>
@@ -23,12 +18,12 @@ const links = [
         <div class="flex max-w-[360px] flex-col gap-2 max-sm:items-center">
           <span class="text-[14px] font-medium">Legal entity address:</span>
           <span class="text-[12px] font-normal max-sm:text-center">
-            100015, Republic of Uzbekistan, Tashkent, Mirabad district, st. Nukusskaya, 22
+            {{ CONTACT_INFO.address }}
           </span>
         </div>
         <div class="flex flex-col gap-2">
           <span class="text-[14px] font-medium">Phone number:</span>
-          <span class="text-[12px] font-normal">(+99871) 231-79-09</span>
+          <span class="text-[12px] font-normal">{{ CONTACT_INFO.phone }}</span>
         </div>
       </div>
       <div class="flex flex-col gap-[34px] max-sm:items-center">
@@ -38,7 +33,7 @@ const links = [
         </div>
         <div class="flex flex-col gap-3">
           <span class="text-[18px] font-bold">Email address:</span>
-          <span>finfo@gmail.com</span>
+          <span>{{ CONTACT_INFO.email }}</span>
         </div>
       </div>
     </div>

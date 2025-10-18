@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cva, type VariantProps } from 'class-variance-authority'
+
 type ButtonVariants = VariantProps<typeof buttonVariants>
+
 interface Props {
   variant?: ButtonVariants['variant']
   size?: ButtonVariants['size']

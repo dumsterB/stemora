@@ -1,16 +1,6 @@
 <script setup lang="ts">
+import { FAQ_ITEMS } from '~/constants'
 import chatChecked from '~/assets/icons/chat-check.svg'
-const slides = ref([
-  {
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
-  },
-  {
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
-  },
-  {
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
-  }
-])
 </script>
 
 <template>
@@ -25,7 +15,7 @@ const slides = ref([
       </p>
     </div>
 
-    <BaseCarousel class="hidden lg:block" :slides="slides" :slides-per-view="3" :space-between="32">
+    <BaseCarousel class="hidden lg:block" :slides="FAQ_ITEMS" :slides-per-view="3" :space-between="32">
       <template #slide="{ slide }">
         <div class="flex h-[316px] flex-col gap-6 rounded-[20px] bg-white p-6">
           <div class="flex flex-col gap-5">
@@ -42,7 +32,7 @@ const slides = ref([
 
     <div class="scrollbar-hide flex gap-[18px] overflow-y-scroll lg:hidden">
       <div
-        v-for="(slide, index) in slides"
+        v-for="(slide, index) in FAQ_ITEMS"
         :key="index"
         class="flex min-h-[241px] min-w-[310px] flex-col gap-6 rounded-[20px] bg-white p-4 first:ml-4 last:mr-4"
       >

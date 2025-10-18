@@ -1,11 +1,5 @@
 <script setup lang="ts">
-const links = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Our Process', href: '/process' },
-  { name: 'Contact', href: '/contact' },
-  { name: 'Book now', href: '/book' }
-]
+import { NAV_LINKS } from '~/constants'
 </script>
 
 <template>
@@ -13,7 +7,7 @@ const links = [
     <div class="container flex flex-row items-center justify-between">
       <BaseSkeleton class="h-13 w-50" />
       <ul class="hidden h-full items-center gap-15 lg:flex">
-        <li v-for="link in links" :key="link.name">
+        <li v-for="link in NAV_LINKS" :key="link.name">
           <NuxtLink
             :to="link.href"
             active-class="text-secondary"

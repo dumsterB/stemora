@@ -1,4 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { CONTACT_INFO } from '~/constants'
+import { useContactForm } from '~/composables/useContactForm'
+
+const { formData, errors, isSubmitting, submitForm } = useContactForm()
+
+const handleSubmit = async () => {
+  const success = await submitForm()
+  if (success) {
+    // Можно показать уведомление об успешной отправке
+    alert('Thank you for your message! We will contact you soon.')
+  }
+}
+</script>
 
 <template>
   <section id="get-in-touch" class="container pt-[122px] pb-[123px]">
@@ -15,22 +28,30 @@
           </div>
           <div class="flex items-center gap-5">
             <span class="text-blue text-[26px] font-bold">Phone</span>
-            <span class="text-[20px] font-normal">(+99871) 231-79-09</span>
+            <a :href="`tel:${CONTACT_INFO.phone}`" class="hover:text-secondary text-[20px] font-normal transition">
+              {{ CONTACT_INFO.phone }}
+            </a>
           </div>
           <div class="flex items-center gap-5">
             <span class="text-blue text-[26px] font-bold">Email</span>
-            <span class="text-[20px] font-normal">finfo@gmail.com</span>
+            <a :href="`mailto:${CONTACT_INFO.email}`" class="hover:text-secondary text-[20px] font-normal transition">
+              {{ CONTACT_INFO.email }}
+            </a>
           </div>
         </div>
         <div class="flex flex-col items-center gap-6 lg:hidden">
           <div class="flex items-center justify-center gap-5">
             <div class="flex items-center gap-2">
               <span class="text-blue text-[14px] font-bold">Phone</span>
-              <span class="text-[12px] font-normal">(+99871) 231-79-09</span>
+              <a :href="`tel:${CONTACT_INFO.phone}`" class="hover:text-secondary text-[12px] font-normal transition">
+                {{ CONTACT_INFO.phone }}
+              </a>
             </div>
             <div class="flex items-center gap-2">
               <span class="text-blue text-[14px] font-bold">Email</span>
-              <span class="text-[12px] font-normal">finfo@gmail.com</span>
+              <a :href="`mailto:${CONTACT_INFO.email}`" class="hover:text-secondary text-[12px] font-normal transition">
+                {{ CONTACT_INFO.email }}
+              </a>
             </div>
           </div>
           <div class="flex items-center gap-5">
@@ -40,28 +61,38 @@
         </div>
       </div>
       <div class="flex items-center justify-center rounded-[20px] bg-white max-sm:p-4 lg:min-h-[626px]">
-        <div class="flex max-w-[446px] flex-col gap-[26px]">
+        <form @submit.prevent="handleSubmit" class="flex max-w-[446px] flex-col gap-[26px]">
           <div class="space-y-2">
             <div class="text-[14px] font-semibold">Name</div>
             <div class="grid grid-cols-2 gap-5">
-              <BaseInput placeholder="First" />
-              <BaseInput placeholder="Last" />
+              <div>
+                <BaseInput v-model="formData.firstName" placeholder="First" />
+                <div v-if="errors.firstName" class="text-xs text-red-500">{{ errors.firstName }}</div>
+              </div>
+              <div>
+                <BaseInput v-model="formData.lastName" placeholder="Last" />
+                <div v-if="errors.lastName" class="text-xs text-red-500">{{ errors.lastName }}</div>
+              </div>
             </div>
           </div>
           <div class="space-y-2">
             <div class="text-[14px] font-semibold">Email</div>
-            <div>
-              <BaseInput class="w-full" placeholder="Email" />
+            <div class="flex flex-col">
+              <BaseInput v-model="formData.email" class="w-full" placeholder="Email" type="email" />
+              <div v-if="errors.email" class="text-xs text-red-500">{{ errors.email }}</div>
             </div>
           </div>
           <div>
             <div class="mb-2 text-[14px] font-semibold">Message</div>
             <div>
-              <BaseTextarea class="w-full" placeholder="Message" />
+              <BaseTextarea v-model="formData.message" class="w-full" placeholder="Message" />
+              <span v-if="errors.message" class="text-xs text-red-500">{{ errors.message }}</span>
             </div>
-            <BaseButton class="mt-[20px]">Submit</BaseButton>
+            <BaseButton type="submit" :disabled="isSubmitting" class="mt-[20px]">
+              {{ isSubmitting ? 'Sending...' : 'Submit' }}
+            </BaseButton>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>

@@ -1,22 +1,5 @@
 <script setup lang="ts">
-
-const slides = ref([
-  {
-    name: 'Hanna Bator',
-    rate: 4,
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
-  },
-  {
-    name: 'Corey Levin',
-    rate: 4,
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
-  },
-  {
-    name: 'Craig Carder',
-    rate: 4,
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
-  }
-])
+import { REVIEWS } from '~/constants'
 </script>
 
 <template>
@@ -25,7 +8,7 @@ const slides = ref([
       Customer Reviews
     </h2>
 
-    <BaseCarousel class="hidden lg:block" :slides="slides" :slides-per-view="3" :space-between="32" loop>
+    <BaseCarousel class="hidden lg:block" :slides="REVIEWS" :slides-per-view="3" :space-between="32" loop>
       <template #slide="{ slide }">
         <div class="flex h-[316px] flex-col gap-6 rounded-[20px] bg-white p-6">
           <div class="flex gap-5">
@@ -44,7 +27,7 @@ const slides = ref([
 
     <div class="scrollbar-hide flex gap-[18px] overflow-y-scroll lg:hidden">
       <div
-        v-for="(slide, index) in slides"
+        v-for="(slide, index) in REVIEWS"
         :key="index"
         class="flex min-h-[241px] min-w-[310px] flex-col gap-6 rounded-[20px] bg-white p-4 first:ml-4 last:mr-4"
       >
