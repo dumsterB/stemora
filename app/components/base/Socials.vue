@@ -14,7 +14,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <div class="flex items-center justify-center gap-3">
+  <div class="inline-flex items-center justify-center gap-3">
     <a
       v-for="social in socialLinks"
       :key="social.name"
@@ -23,7 +23,7 @@ const socialLinks = [
       rel="noopener noreferrer"
       class="transition hover:scale-110"
     >
-      <img :src="social.img" :alt="social.name" class="lg:size-[38px]" />
+      <img :src="social.img" :alt="social.name" class="size-[32px] lg:size-[38px]" />
     </a>
   </div>
 </template>

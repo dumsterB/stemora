@@ -7,8 +7,8 @@ const links = [
 ]
 </script>
 <template>
-  <footer class="container">
-    <div class="mt-[60px] mb-[100px] flex flex-col justify-between max-sm:items-center max-sm:gap-[42px] lg:flex-row">
+  <footer class="container bg-white">
+    <div class="flex flex-col justify-between pt-[60px] pb-[100px] max-sm:items-center max-sm:gap-[42px] lg:flex-row">
       <BaseSkeleton class="h-13 w-50" />
 
       <ul class="flex h-full flex-row gap-5 lg:flex-col">

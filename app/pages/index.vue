@@ -4,4 +4,5 @@
   <MainBeforeAfter />
   <MainCustomerReviews />
   <MainFaq />
+  <MainGetInTouch />
 </template>
