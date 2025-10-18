@@ -48,7 +48,7 @@ const slides = ref([
       >
         <div class="flex flex-col gap-5">
           <div class="flex size-[54px] items-center justify-center rounded-[8px] bg-[#F5F5F5]">
-            <img :src="chatChecked" class="size-[28px]" />
+            <img alt="check" :src="chatChecked" class="size-[28px]" />
           </div>
 
           <p class="text-[16px] font-semibold">Customer Reviews</p>

@@ -23,6 +23,7 @@ const links = [
           </NuxtLink>
         </li>
       </ul>
+      <BaseSocials class="hidden lg:flex" />
       <BaseButton>Book now</BaseButton>
     </div>
   </nav>
