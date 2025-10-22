@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { FOOTER_LINKS, CONTACT_INFO } from '~/constants'
+
+import logo from '~/assets/images/logo-dark.png'
 </script>
 <template>
-  <footer class="container bg-white">
-    <div class="flex flex-col justify-between pt-[60px] pb-[100px] max-sm:items-center max-sm:gap-[42px] lg:flex-row">
-      <BaseSkeleton class="h-13 w-50" />
+  <footer class="bg-white">
+    <div
+      class="container flex flex-col justify-between pt-[60px] pb-[100px] max-sm:items-center max-sm:gap-[42px] lg:flex-row"
+    >
+      <img :src="logo" class="w-50" alt="" />
 
       <ul class="flex h-full flex-row gap-5 lg:flex-col">
         <li v-for="link in FOOTER_LINKS" :key="link.name">

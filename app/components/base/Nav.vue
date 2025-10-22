@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { NAV_LINKS } from '~/constants'
+import logo from '~/assets/images/logo-dark.png'
 </script>
 
 <template>
   <nav class="flex h-19 items-center bg-white">
     <div class="container flex flex-row items-center justify-between">
-      <BaseSkeleton class="h-13 w-50" />
+      <img :src="logo" class="w-50" alt="" />
+
       <ul class="hidden h-full items-center gap-15 lg:flex">
         <li v-for="link in NAV_LINKS" :key="link.name">
           <NuxtLink

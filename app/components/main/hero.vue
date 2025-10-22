@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section id="hero" class="flex h-[480px] items-center justify-center lg:h-[634px]">
+  <section id="hero" class="flex h-dvh items-center justify-center">
     <div class="relative container space-y-8 pl-6">
       <div class="space-y-5">
         <h1 class="text-blue text-[32px] leading-[130%] font-bold tracking-[5%] lg:text-[68px]">
