@@ -1,4 +1,4 @@
-import type { NavLink, SocialLink, Advantage, Review, FaqItem, BeforeAfterImage } from '~/types'
+import type { NavLink, SocialLink, Advantage, Review, FaqItem, BeforeAfterImage, WorkStep } from '~/types'
 
 // Navigation
 export const NAV_LINKS: NavLink[] = [
@@ -115,3 +115,36 @@ export const CONTACT_INFO = {
   email: 'finfo@gmail.com',
   address: '100015, Republic of Uzbekistan, Tashkent, Mirabad district, st. Nukusskaya, 22'
 } as const
+
+// Work Steps / Process
+export const ABOUT_WORKS_LIST: WorkStep[] = [
+  {
+    labelKey: 'Step 1: Preparation',
+    descKey:
+      'Clear the area that needs to be cleaned of any clutter, such as toys, clothing, and other objects. Move any furniture that needs to be cleaned underneath to create a clear workspace.'
+  },
+  {
+    labelKey: 'Step 2: Pre-Vacuuming',
+    descKey: 'Starting at the top of the couch we use vacuum to remove any loose dirt and debris.'
+  },
+  {
+    labelKey: 'Step 3: Shampooing',
+    descKey:
+      'The team will then apply an organic shampooing solution to the carpet or upholstery, using a machine to work the shampoo deep into the fibers.'
+  },
+  {
+    labelKey: 'Step 4: Steam Extraction',
+    descKey:
+      'Next, the team will use a high-powered steam-extraction machine to remove the shampoo and dirt from the carpet or upholstery. This process will remove any excess moisture and dirt from the fibers.'
+  },
+  {
+    labelKey: 'Step 5: Odor Treatment',
+    descKey:
+      'The team will then apply a professional odor treatment solution to eliminate any unpleasant smells that may be present.'
+  },
+  {
+    labelKey: 'Step 6: Scotch Guard Protection',
+    descKey:
+      'After the cleaning process is complete, the team will apply a Scotchgard protection service. This will help to block stains and repel liquids from soaking into the fibers, making it easier to clean up any spills that may occur in the future.'
+  }
+]

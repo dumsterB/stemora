@@ -1,0 +1,3 @@
+<template>
+  <ProcessSteps />
+</template>

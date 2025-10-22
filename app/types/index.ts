@@ -29,3 +29,8 @@ export interface SocialLink {
   href: string
   img: string
 }
+
+export interface WorkStep {
+  labelKey: string
+  descKey: string
+}
