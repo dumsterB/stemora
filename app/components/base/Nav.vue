@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { NAV_LINKS } from '~/constants'
-import logo from '~/assets/images/logo-dark.png'
+import logo from '~/assets/images/logo.png'
 </script>
 
 <template>

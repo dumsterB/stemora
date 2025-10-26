@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { FOOTER_LINKS, CONTACT_INFO } from '~/constants'
 
-import logo from '~/assets/images/logo-dark.png'
+import logo from '~/assets/images/logo.png'
 </script>
 <template>
   <footer class="bg-white">
