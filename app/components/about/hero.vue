@@ -1,9 +1,11 @@
 <template>
   <section id="hero" class="flex h-dvh items-center justify-center">
     <div class="container grid grid-cols-1 gap-6 lg:grid-cols-2">
-      <div class="order-2 space-y-5 text-center lg:order-1 lg:text-start">
-        <p class="text-blue text-[42px] leading-[130%] font-bold tracking-[5%] lg:text-[62px]">About Stemora</p>
-        <h1 class="text-blue text-[20px] leading-[130%] font-bold tracking-[5%] lg:text-[32px]">
+      <div class="order-2 text-center lg:order-1 lg:text-start">
+        <p class="text-blue mb-[42px] text-[42px] leading-[130%] font-bold tracking-[5%] lg:text-[62px]">
+          About Stemora
+        </p>
+        <h1 class="text-blue mb-[32px] text-[20px] leading-[130%] font-bold tracking-[5%] lg:text-[32px]">
           Stemora is a professional couch and upholstery cleaning company based in New York City.
         </h1>
 
