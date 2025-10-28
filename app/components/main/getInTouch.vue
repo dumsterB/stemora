@@ -2,15 +2,7 @@
 import { CONTACT_INFO } from '~/constants'
 import { useContactForm } from '~/composables/useContactForm'
 
-const { formData, errors, isSubmitting, submitForm } = useContactForm()
-
-const handleSubmit = async () => {
-  const success = await submitForm()
-  if (success) {
-    // Можно показать уведомление об успешной отправке
-    alert('Thank you for your message! We will contact you soon.')
-  }
-}
+const { formData, errors, isSubmitting } = useContactForm()
 </script>
 
 <template>
@@ -61,16 +53,17 @@ const handleSubmit = async () => {
         </div>
       </div>
       <div class="flex items-center justify-center rounded-[20px] bg-white max-sm:p-4 lg:min-h-[626px]">
-        <form @submit.prevent="handleSubmit" class="flex max-w-[446px] flex-col gap-[26px]">
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex max-w-[446px] flex-col gap-[26px]">
+          <input type="hidden" name="access_key" value="ed3bea2b-9ffe-40ce-b93b-76abae3157af" />
           <div class="space-y-2">
             <div class="text-[14px] font-semibold">Name</div>
             <div class="grid grid-cols-2 gap-5">
               <div>
-                <BaseInput v-model="formData.firstName" placeholder="First" />
+                <BaseInput name="first_name" v-model="formData.firstName" placeholder="First" />
                 <div v-if="errors.firstName" class="text-xs text-red-500">{{ errors.firstName }}</div>
               </div>
               <div>
-                <BaseInput v-model="formData.lastName" placeholder="Last" />
+                <BaseInput name="last_name" v-model="formData.lastName" placeholder="Last" />
                 <div v-if="errors.lastName" class="text-xs text-red-500">{{ errors.lastName }}</div>
               </div>
             </div>
@@ -78,14 +71,14 @@ const handleSubmit = async () => {
           <div class="space-y-2">
             <div class="text-[14px] font-semibold">Email</div>
             <div class="flex flex-col">
-              <BaseInput v-model="formData.email" class="w-full" placeholder="Email" type="email" />
+              <BaseInput name="email" v-model="formData.email" class="w-full" placeholder="Email" type="email" />
               <div v-if="errors.email" class="text-xs text-red-500">{{ errors.email }}</div>
             </div>
           </div>
           <div>
             <div class="mb-2 text-[14px] font-semibold">Message</div>
             <div>
-              <BaseTextarea v-model="formData.message" class="w-full" placeholder="Message" />
+              <BaseTextarea name="message" v-model="formData.message" class="w-full" placeholder="Message" />
               <span v-if="errors.message" class="text-xs text-red-500">{{ errors.message }}</span>
             </div>
             <BaseButton type="submit" :disabled="isSubmitting" class="mt-[20px]">

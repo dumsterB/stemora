@@ -1,14 +1,12 @@
 <script setup lang="ts">
+import type { TextareaHTMLAttributes } from 'vue'
 const model = defineModel<string>({ default: '' })
 
-interface Props {
-  placeholder: string
-  disabled?: boolean
+interface Props extends /* @vue-ignore */ TextareaHTMLAttributes {
   rows?: number
 }
 
 withDefaults(defineProps<Props>(), {
-  disabled: false,
   rows: 4
 })
 </script>
@@ -16,9 +14,7 @@ withDefaults(defineProps<Props>(), {
 <template>
   <textarea
     v-model="model"
-    :placeholder
-    :disabled
-    :rows
+    v-bind="$attrs"
     class="focus:border-secondary resize-none rounded-[12px] border border-[#D2D2D2] px-3 py-4 text-[12px] font-medium transition focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
   />
 </template>

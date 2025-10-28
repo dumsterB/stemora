@@ -43,34 +43,6 @@ export function useContactForm() {
     return Object.keys(errors.value).length === 0
   }
 
-  const submitForm = async () => {
-    if (!validateForm()) {
-      return false
-    }
-
-    isSubmitting.value = true
-
-    try {
-      // Здесь будет логика отправки формы
-      await new Promise(resolve => setTimeout(resolve, 1000))
-
-      // Сброс формы после успешной отправки
-      formData.value = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: ''
-      }
-
-      return true
-    } catch (error) {
-      console.error('Form submission error:', error)
-      return false
-    } finally {
-      isSubmitting.value = false
-    }
-  }
-
   const resetForm = () => {
     formData.value = {
       firstName: '',
@@ -86,7 +58,6 @@ export function useContactForm() {
     errors,
     isSubmitting,
     validateForm,
-    submitForm,
     resetForm
   }
 }
