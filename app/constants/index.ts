@@ -111,9 +111,9 @@ export const FAQ_ITEMS: FaqItem[] = [
 
 // Contact Information
 export const CONTACT_INFO = {
-  phone: '(+99871) 231-79-09',
-  email: 'finfo@gmail.com',
-  address: '100015, Republic of Uzbekistan, Tashkent, Mirabad district, st. Nukusskaya, 22'
+  phone: '(929) 538 8456',
+  email: 'info@stemora-clean.com',
+  address: 'Based in New York City Serving NYC & New Jersey'
 } as const
 
 // Work Steps / Process
