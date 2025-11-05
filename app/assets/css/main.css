@@ -9,6 +9,14 @@
     background-color: #FAFAFA;
 }
 
+
+ .slider-example-split-line {
+     --divider-width: 4px;
+     --divider-color: #FE823F;
+     --default-handle-opacity: 0;
+ }
+
+
 @theme {
     --breakpoint-sm: 40rem;   /* 640px */
     --breakpoint-md: 48rem;   /* 768px */
