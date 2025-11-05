@@ -16,19 +16,19 @@ import missionIMG from '~/assets/images/mission.png'
         </div>
         <div class="text-basis flex flex-col gap-3.5 text-[16px] leading-[130%] font-semibold lg:gap-8 lg:text-[22px]">
           <div class="flex items-center gap-5">
-            <div class="bg-basis size-[20px] min-w-[20px] rounded-full" />
+            <div class="bg-basis size-[12px] min-w-[12px] rounded-full lg:size-[20px] lg:min-w-[20px]" />
             <p>Deep steam cleaning that goes beyond surface results.</p>
           </div>
           <div class="flex items-center gap-5">
-            <div class="bg-basis size-[20px] min-w-[20px] rounded-full" />
+            <div class="bg-basis size-[12px] min-w-[12px] rounded-full lg:size-[20px] lg:min-w-[20px]" />
             <p>Eco-friendly, family- and pet-safe products.</p>
           </div>
           <div class="flex items-center gap-5">
-            <div class="bg-basis size-[20px] min-w-[20px] rounded-full" />
+            <div class="bg-basis size-[12px] min-w-[12px] rounded-full lg:size-[20px] lg:min-w-[20px]" />
             <p>Honest pricing and transparent service.</p>
           </div>
           <div class="flex items-center gap-5">
-            <div class="bg-basis size-[20px] min-w-[20px] rounded-full" />
+            <div class="bg-basis size-[12px] min-w-[12px] rounded-full lg:size-[20px] lg:min-w-[20px]" />
             <p>Building long-term trust through consistent quality and professionalism.</p>
           </div>
         </div>
