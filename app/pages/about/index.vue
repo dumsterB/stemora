@@ -2,4 +2,5 @@
   <AboutHero />
   <AboutOurMission />
   <AboutWhatWeDo />
+  <AboutGetStarted />
 </template>
