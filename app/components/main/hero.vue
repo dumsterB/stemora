@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <section id="hero" class="flex h-dvh items-center justify-center">
     <div class="relative container space-y-8 pl-6">
