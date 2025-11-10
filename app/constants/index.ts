@@ -5,7 +5,7 @@ export const NAV_LINKS: NavLink[] = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Our Process', href: '/process' },
-  { name: 'Contact', href: '/contact' },
+  // { name: 'Contact', href: '/contact' },
   { name: 'Book now', href: '/book-now' }
 ]
 
