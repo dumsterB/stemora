@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section id="hero" class="flex h-dvh items-center justify-center">
+  <section id="hero" class="flex h-[calc(100dvh-20dvh)] items-center justify-center">
     <div class="container grid grid-cols-1 space-y-8 lg:grid-cols-2">
       <div class="space-y-5">
         <p class="text-blue text-[24px] leading-[130%] font-bold tracking-[5%] lg:text-[42px]">ARE YOU READY?</p>

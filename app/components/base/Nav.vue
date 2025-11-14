@@ -63,7 +63,7 @@ const closeMenu = () => {
         </li>
       </ul>
       <BaseSocials class="!hidden lg:!flex" />
-      <BaseButton>Book now</BaseButton>
+      <BaseButton @click="navigateTo('/book-now')">Book now</BaseButton>
     </div>
 
     <!-- Оверлей для закрытия меню -->

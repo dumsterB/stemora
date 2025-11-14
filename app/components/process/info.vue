@@ -53,7 +53,7 @@ import { ImgComparisonSlider } from '@img-comparison-slider/vue'
           Experience the luxury of steam cleaning as we revive your couch and refresh your home. Elevate comfort, renew
           your living space, and embrace a revitalized home like never before.
         </p>
-        <BaseButton class="max-sm:w-full">Book now</BaseButton>
+        <BaseButton class="max-sm:w-full" @click="navigateTo('/book-now')">Book now</BaseButton>
       </div>
     </div>
   </section>

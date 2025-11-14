@@ -27,7 +27,9 @@ import logo from '~/assets/images/logo.png'
         </div>
         <div class="flex flex-col gap-2">
           <span class="text-[14px] font-medium">Phone number:</span>
-          <span class="text-[12px] font-normal">{{ CONTACT_INFO.phone }}</span>
+          <span class="text-[12px] font-normal"
+            ><a :href="`tel:${CONTACT_INFO.phone}`">{{ CONTACT_INFO.phone }}</a></span
+          >
         </div>
       </div>
       <div class="flex flex-col gap-[34px] max-sm:items-center">
