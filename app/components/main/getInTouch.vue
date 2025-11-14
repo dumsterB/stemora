@@ -54,7 +54,7 @@ const { formData, errors, isSubmitting } = useContactForm()
       </div>
       <div class="flex items-center justify-center rounded-[20px] bg-white max-sm:p-4 lg:min-h-[626px]">
         <form action="https://api.web3forms.com/submit" method="POST" class="flex max-w-[446px] flex-col gap-[26px]">
-          <input type="hidden" name="access_key" value="ed3bea2b-9ffe-40ce-b93b-76abae3157af" />
+          <input type="hidden" name="access_key" value="e4aec544-626e-4fc9-9b19-50f825253a24" />
           <div class="space-y-2">
             <div class="text-[14px] font-semibold">Name</div>
             <div class="grid grid-cols-2 gap-5">

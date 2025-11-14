@@ -1,6 +1,6 @@
 <template>
   <BookHero />
-  <BookCards />
+  <!--  <BookCards />-->
   <BookPlease />
   <section class="container">
     <iframe
