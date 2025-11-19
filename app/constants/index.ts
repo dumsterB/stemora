@@ -80,32 +80,35 @@ export const BEFORE_AFTER_IMAGES: BeforeAfterImage[] = [
 // Reviews
 export const REVIEWS: Review[] = [
   {
-    name: 'Hanna Bator',
-    rate: 4,
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
+    name: 'Emily R. – Brooklyn, NY',
+    rate: 5,
+    text: 'I honestly didn’t realize how dirty my couch was until Stemora finished cleaning it. It looks brand new! The technician was polite, arrived on time, and explained everything clearly. Totally worth it — my living room smells so fresh now!'
   },
   {
-    name: 'Corey Levin',
-    rate: 4,
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
+    name: 'Michael S. – Jersey City, NJ',
+    rate: 5,
+    text: 'Amazing service! I booked last minute and they still managed to come the same day. They removed stains I thought would never come out. The results were better than I expected — I’ll definitely be calling Stemora again.'
   },
   {
-    name: 'Craig Carder',
-    rate: 4,
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
+    name: 'Sofia D. – Manhattan, NY',
+    rate: 5,
+    text: 'Professional, fast, and super friendly team. I love that they use steam — no harsh chemicals, just clean and fresh furniture. My velvet sofa looks like new again. Highly recommend Stemora to anyone in NYC or NJ!'
   }
 ]
 
 // FAQ
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
+    q: 'How long does the cleaning process take?',
+    text: 'Most couch or upholstery cleanings take 1–2 hours, depending on the size of the furniture and how heavily soiled it is. Larger sectionals or multiple items may take longer, but we always work efficiently without compromising quality.'
   },
   {
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
+    q: 'How long does it take for my couch to dry?',
+    text: 'Typically, your couch will be dry within 3–6 hours after cleaning. We use professional-grade steam extraction equipment that removes most of the moisture, so drying time is quick and safe for all fabric types.'
   },
   {
-    text: 'Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker. Polkadot waves ox kadena tezos bancor kusama livepeer decred. Quant THETA gala helium holo. Telcoin loopring fantom hive.'
+    q: 'Do you use chemicals or is it eco-friendly?',
+    text: 'Stemora uses eco-friendly, non-toxic steam cleaning methods — safe for kids, pets, and allergy-sensitive homes. No harsh chemicals, just deep steam power and gentle, plant-based cleaning solutions.'
   }
 ]
 

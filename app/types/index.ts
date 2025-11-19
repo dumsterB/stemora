@@ -16,6 +16,7 @@ export interface Review {
 }
 
 export interface FaqItem {
+  q: string
   text: string
 }
 

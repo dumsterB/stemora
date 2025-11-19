@@ -17,13 +17,13 @@ import chatChecked from '~/assets/icons/chat-check.svg'
 
     <BaseCarousel class="hidden lg:block" :slides="FAQ_ITEMS" :slides-per-view="3" :space-between="32">
       <template #slide="{ slide }">
-        <div class="flex h-[316px] flex-col gap-6 rounded-[20px] bg-white p-6">
+        <div class="flex h-full flex-col gap-6 rounded-[20px] bg-white p-6">
           <div class="flex flex-col gap-5">
             <div class="flex size-[82px] items-center justify-center rounded-[20px] bg-[#F5F5F5]">
               <img alt="" :src="chatChecked" />
             </div>
 
-            <p class="text-[24px] font-semibold">Customer Reviews</p>
+            <p class="text-[24px] font-semibold">{{ slide.q }}</p>
           </div>
           <p class="text-[18px] font-normal">{{ slide.text }}</p>
         </div>
@@ -41,9 +41,9 @@ import chatChecked from '~/assets/icons/chat-check.svg'
             <img alt="check" :src="chatChecked" class="size-[28px]" />
           </div>
 
-          <p class="text-[16px] font-semibold">Customer Reviews</p>
+          <p class="text-[16px] font-semibold">{{ slide.q }}</p>
         </div>
-        <p class="text-[12px] font-normal">{{ slide.text }}</p>
+        <p class="text-[12px] font-normal whitespace-nowrap">{{ slide.text }}</p>
       </div>
     </div>
   </section>
