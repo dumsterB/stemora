@@ -15,7 +15,7 @@
       <BaseButton class="hidden lg:block" @click="navigateTo('/book-now')">Book now</BaseButton>
       <img alt="sofa" src="~/assets/images/sofa-hero.png" class="static top-0 left-[512px] lg:absolute" />
       <div class="flex items-center justify-center lg:hidden">
-        <BaseButton>Book now</BaseButton>
+        <BaseButton @click="navigateTo('/book-now#please')">Book now</BaseButton>
       </div>
     </div>
   </section>
