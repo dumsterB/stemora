@@ -63,7 +63,8 @@ const closeMenu = () => {
         </li>
       </ul>
       <BaseSocials class="!hidden lg:!flex" />
-      <BaseButton @click="navigateTo('/book-now#please')">Book now</BaseButton>
+      <img :src="logo" class="block w-50 lg:block lg:hidden" alt="" />
+      <BaseButton class="hidden lg:block" @click="navigateTo('/book-now#please')">Book now</BaseButton>
     </div>
 
     <!-- Оверлей для закрытия меню -->
@@ -71,7 +72,7 @@ const closeMenu = () => {
       v-if="isMenuOpen"
       @click="closeMenu"
       class="bg-opacity-50 fixed inset-0 z-40 bg-black/60 transition-opacity lg:hidden"
-    ></div>
+    />
 
     <!-- Мобильное слайдящееся меню слева направо -->
     <div
@@ -81,8 +82,7 @@ const closeMenu = () => {
       ]"
     >
       <!-- Шапка меню с логотипом и кнопкой закрытия -->
-      <div class="flex items-center justify-between p-4">
-        <img :src="logo" class="w-40" alt="Logo" />
+      <div class="flex justify-end p-4">
         <button @click="closeMenu" class="text-gray-600 hover:text-gray-900">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
