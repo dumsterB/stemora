@@ -26,7 +26,7 @@ import tiktok from '~/assets/icons/tiktok.svg'
 export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'Google', href: 'https://www.google.com', img: google },
   { name: 'Facebook', href: 'https://www.facebook.com', img: facebook },
-  { name: 'Instagram', href: 'https://www.instagram.com', img: instagram },
+  { name: 'Instagram', href: 'https://www.instagram.com/stemora.clean', img: instagram },
   { name: 'Pinterest', href: 'https://www.pinterest.com', img: pinterest },
   { name: 'TikTok', href: 'https://www.tiktok.com', img: tiktok }
 ]

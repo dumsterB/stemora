@@ -43,7 +43,7 @@ import chatChecked from '~/assets/icons/chat-check.svg'
 
           <p class="text-[16px] font-semibold">{{ slide.q }}</p>
         </div>
-        <p class="text-[12px] font-normal whitespace-nowrap">{{ slide.text }}</p>
+        <p class="text-[12px] font-normal">{{ slide.text }}</p>
       </div>
     </div>
   </section>
