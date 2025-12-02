@@ -57,13 +57,13 @@ const { formData, errors, isSubmitting } = useContactForm()
           <input type="hidden" name="access_key" value="e4aec544-626e-4fc9-9b19-50f825253a24" />
           <div class="space-y-2">
             <div class="text-[14px] font-semibold">Name</div>
-            <div class="grid grid-cols-2 gap-5">
-              <div>
-                <BaseInput name="first_name" v-model="formData.firstName" placeholder="First" />
+            <div class="flex flex-row flex-wrap items-center justify-center gap-5">
+              <div class="w-full">
+                <BaseInput name="first_name" class="w-full" v-model="formData.firstName" placeholder="First" />
                 <div v-if="errors.firstName" class="text-xs text-red-500">{{ errors.firstName }}</div>
               </div>
-              <div>
-                <BaseInput name="last_name" v-model="formData.lastName" placeholder="Last" />
+              <div class="w-full">
+                <BaseInput name="last_name" class="w-full" v-model="formData.lastName" placeholder="Last" />
                 <div v-if="errors.lastName" class="text-xs text-red-500">{{ errors.lastName }}</div>
               </div>
             </div>

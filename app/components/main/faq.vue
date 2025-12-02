@@ -10,9 +10,9 @@ import chatChecked from '~/assets/icons/chat-check.svg'
         Frequently Asked Questions
       </h2>
 
-      <p class="text-center text-[12px] font-medium lg:text-[20px]">
-        Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker.
-      </p>
+      <!--      <p class="text-center text-[12px] font-medium lg:text-[20px]">-->
+      <!--        Crypto ipsum bitcoin ethereum dogecoin litecoin. Cardano polymath klaytn harmony XRP chiliz maker.-->
+      <!--      </p>-->
     </div>
 
     <BaseCarousel class="hidden lg:block" :slides="FAQ_ITEMS" :slides-per-view="3" :space-between="32">

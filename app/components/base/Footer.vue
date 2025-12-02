@@ -8,7 +8,7 @@ import logo from '~/assets/images/logo.png'
     <div
       class="container flex flex-col justify-between pt-[60px] pb-[100px] max-sm:items-center max-sm:gap-[42px] lg:flex-row"
     >
-      <img :src="logo" class="w-50" alt="" />
+      <img @click="navigateTo('/')" :src="logo" class="w-50 cursor-pointer" alt="" />
 
       <ul class="flex h-full flex-row gap-5 lg:flex-col">
         <li v-for="link in FOOTER_LINKS" :key="link.name">
@@ -35,7 +35,7 @@ import logo from '~/assets/images/logo.png'
       <div class="flex flex-col gap-[34px] max-sm:items-center">
         <div class="flex flex-col gap-3">
           <span class="text-[18px] font-bold max-sm:text-center">Follow us on:</span>
-          <BaseSocials />
+          <BaseSocials class="self-start" />
         </div>
         <div class="flex flex-col gap-3">
           <span class="text-[18px] font-bold">Email address:</span>

@@ -48,7 +48,7 @@ const closeMenu = () => {
       </svg>
 
       <!-- Логотип на десктопе -->
-      <img :src="logo" class="hidden w-50 lg:block" alt="" />
+      <img @click="navigateTo('/')" :src="logo" class="hidden w-50 cursor-pointer lg:block" alt="" />
 
       <!-- Десктопное меню -->
       <ul class="hidden h-full items-center gap-15 lg:flex">

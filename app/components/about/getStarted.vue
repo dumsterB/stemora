@@ -4,7 +4,7 @@
       <p class="text-center text-[24px] font-semibold text-white lg:w-1/2 lg:text-[32px]">
         READY TO GET STARTED? Contact us today and experience the Stemora difference.
       </p>
-      <div class="inline-block rounded-[62px] bg-white p-[7px]">
+      <div class="inline-flex flex-row flex-nowrap rounded-[62px] bg-white p-[7px]">
         <input type="email" placeholder="Email Address" class="ml-4 border-0 focus-within:outline-0" />
         <BaseButton class="rounded-[62px]">Send</BaseButton>
       </div>
