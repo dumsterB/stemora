@@ -10,6 +10,7 @@ export interface BeforeAfterImage {
 }
 
 export interface Review {
+  avatar: string
   name: string
   rate: number
   text: string

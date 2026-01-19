@@ -12,7 +12,8 @@ import { REVIEWS } from '~/constants'
       <template #slide="{ slide }">
         <div class="flex h-[316px] flex-col gap-6 rounded-[20px] bg-white p-6">
           <div class="flex gap-5">
-            <div class="size-[82px] rounded-full bg-black" />
+            <img :src="slide.avatar" :alt="slide.name" class="size-[82px] rounded-full object-cover" />
+
             <div class="flex flex-col gap-3">
               <span class="text-[24px] font-semibold">
                 {{ slide.name }}
@@ -32,7 +33,8 @@ import { REVIEWS } from '~/constants'
         class="flex min-h-[241px] min-w-[310px] flex-col gap-6 rounded-[20px] bg-white p-4 first:ml-4 last:mr-4"
       >
         <div class="flex gap-5">
-          <div class="size-[54px] rounded-full bg-black" />
+          <img :src="slide.avatar" :alt="slide.name" class="size-[54px] rounded-full object-cover" />
+
           <div class="flex flex-col gap-3">
             <span class="text-[16px] font-semibold">
               {{ slide.name }}

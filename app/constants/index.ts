@@ -25,7 +25,7 @@ import tiktok from '~/assets/icons/tiktok.svg'
 
 export const SOCIAL_LINKS: SocialLink[] = [
   // { name: 'Google', href: 'https://www.google.com', img: google },
-  // { name: 'Facebook', href: 'https://www.facebook.com', img: facebook },
+  { name: 'Facebook', href: 'https://www.facebook.com/share/1QaMST5dCd/?mibextid=wwXIfr', img: facebook },
   { name: 'Instagram', href: 'https://www.instagram.com/stemora.clean', img: instagram }
   // { name: 'Pinterest', href: 'https://www.pinterest.com', img: pinterest },
   // { name: 'TikTok', href: 'https://www.tiktok.com', img: tiktok }
@@ -76,20 +76,25 @@ export const BEFORE_AFTER_IMAGES: BeforeAfterImage[] = [
   { before: sofa3before, after: sofa3after },
   { before: sofa4before, after: sofa4after }
 ]
-
+import faceMale from '~/assets/images/face-m.png'
+import faceFemale from '~/assets/images/face-f.png'
+import faceFemaleS from '~/assets/images/face-fS.png'
 // Reviews
 export const REVIEWS: Review[] = [
   {
+    avatar: faceFemale,
     name: 'Emily R. – Brooklyn, NY',
     rate: 5,
     text: 'I honestly didn’t realize how dirty my couch was until Stemora finished cleaning it. It looks brand new! The technician was polite, arrived on time, and explained everything clearly. Totally worth it — my living room smells so fresh now!'
   },
   {
+    avatar: faceMale,
     name: 'Michael S. – Jersey City, NJ',
     rate: 5,
     text: 'Amazing service! I booked last minute and they still managed to come the same day. They removed stains I thought would never come out. The results were better than I expected — I’ll definitely be calling Stemora again.'
   },
   {
+    avatar: faceFemaleS,
     name: 'Sofia D. – Manhattan, NY',
     rate: 5,
     text: 'Professional, fast, and super friendly team. I love that they use steam — no harsh chemicals, just clean and fresh furniture. My velvet sofa looks like new again. Highly recommend Stemora to anyone in NYC or NJ!'
